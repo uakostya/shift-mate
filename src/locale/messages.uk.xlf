@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="uk" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="setup.title" datatype="html">
+        <source>Create Shift Schedule</source>
+        <target>Створити Графік Змін</target>
+      </trans-unit>
+      <trans-unit id="setup.description" datatype="html">
+        <source>Set up your work schedule and get a shareable link</source>
+        <target>Налаштуйте свій робочий графік та отримайте посилання для обміну</target>
+      </trans-unit>
+      <trans-unit id="setup.name.label" datatype="html">
+        <source>Schedule Name (Optional)</source>
+        <target>Назва Графіку (Опціонально)</target>
+      </trans-unit>
+      <trans-unit id="setup.name.placeholder" datatype="html">
+        <source>My Work Schedule</source>
+        <target>Мій Робочий Графік</target>
+      </trans-unit>
+      <trans-unit id="setup.startDate.label" datatype="html">
+        <source>Start Date</source>
+        <target>Дата Початку</target>
+      </trans-unit>
+      <trans-unit id="setup.startDate.error" datatype="html">
+        <source>Start date is required</source>
+        <target>Дата початку обов'язкова</target>
+      </trans-unit>
+      <trans-unit id="setup.workDays.label" datatype="html">
+        <source>Working Days</source>
+        <target>Робочі Дні</target>
+      </trans-unit>
+      <trans-unit id="setup.workDays.error" datatype="html">
+        <source>Number of working days must be between 1 and 365</source>
+        <target>Кількість робочих днів має бути від 1 до 365</target>
+      </trans-unit>
+      <trans-unit id="setup.restDays.label" datatype="html">
+        <source>Rest Days</source>
+        <target>Дні Відпочинку</target>
+      </trans-unit>
+      <trans-unit id="setup.restDays.error" datatype="html">
+        <source>Number of rest days must be between 1 and 365</source>
+        <target>Кількість днів відпочинку має бути від 1 до 365</target>
+      </trans-unit>
+      <trans-unit id="setup.startTime.label" datatype="html">
+        <source>Start Time (Optional)</source>
+        <target>Час Початку (Опціонально)</target>
+      </trans-unit>
+      <trans-unit id="setup.endTime.label" datatype="html">
+        <source>End Time (Optional)</source>
+        <target>Час Закінчення (Опціонально)</target>
+      </trans-unit>
+      <trans-unit id="setup.create.button" datatype="html">
+        <source>Create Schedule</source>
+        <target>Створити Графік</target>
+      </trans-unit>
+      <trans-unit id="setup.success.title" datatype="html">
+        <source>Schedule Created Successfully!</source>
+        <target>Графік Успішно Створено!</target>
+      </trans-unit>
+      <trans-unit id="setup.success.url.label" datatype="html">
+        <source>Schedule URL:</source>
+        <target>Посилання на Графік:</target>
+      </trans-unit>
+      <trans-unit id="setup.success.copy.button" datatype="html">
+        <source>Copy</source>
+        <target>Копіювати</target>
+      </trans-unit>
+      <trans-unit id="setup.success.view.button" datatype="html">
+        <source>View Schedule</source>
+        <target>Переглянути Графік</target>
+      </trans-unit>
+      <trans-unit id="setup.success.new.button" datatype="html">
+        <source>Create New</source>
+        <target>Створити Новий</target>
+      </trans-unit>
+      <trans-unit id="calendar.title" datatype="html">
+        <source>Shift Schedule Calendar</source>
+        <target>Календар Графіку Змін</target>
+      </trans-unit>
+      <trans-unit id="calendar.pattern" datatype="html">
+        <source>Pattern:</source>
+        <target>Шаблон:</target>
+      </trans-unit>
+      <trans-unit id="calendar.work" datatype="html">
+        <source>work</source>
+        <target>робота</target>
+      </trans-unit>
+      <trans-unit id="calendar.rest" datatype="html">
+        <source>rest</source>
+        <target>відпочинок</target>
+      </trans-unit>
+      <trans-unit id="calendar.error.title" datatype="html">
+        <source>Invalid Schedule Parameters</source>
+        <target>Неправильні Параметри Графіку</target>
+      </trans-unit>
+      <trans-unit id="calendar.error.description" datatype="html">
+        <source>The schedule parameters in the URL are invalid or missing.</source>
+        <target>Параметри графіку в URL неправильні або відсутні.</target>
+      </trans-unit>
+      <trans-unit id="calendar.error.button" datatype="html">
+        <source>Create New Schedule</source>
+        <target>Створити Новий Графік</target>
+      </trans-unit>
+      <trans-unit id="calendar.previous.month" datatype="html">
+        <source>Previous month</source>
+        <target>Попередній місяць</target>
+      </trans-unit>
+      <trans-unit id="calendar.next.month" datatype="html">
+        <source>Next month</source>
+        <target>Наступний місяць</target>
+      </trans-unit>
+      <trans-unit id="calendar.legend.working" datatype="html">
+        <source>Working Day</source>
+        <target>Робочий День</target>
+      </trans-unit>
+      <trans-unit id="calendar.legend.off" datatype="html">
+        <source>Day Off</source>
+        <target>Вихідний</target>
+      </trans-unit>
+      <trans-unit id="calendar.legend.today" datatype="html">
+        <source>Today</source>
+        <target>Сьогодні</target>
+      </trans-unit>
+      <trans-unit id="calendar.actions.new" datatype="html">
+        <source>Create New Schedule</source>
+        <target>Створити Новий Графік</target>
+      </trans-unit>
+      <trans-unit id="calendar.actions.share" datatype="html">
+        <source>Share Schedule</source>
+        <target>Поділитися Графіком</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
