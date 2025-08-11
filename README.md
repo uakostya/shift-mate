@@ -2,14 +2,20 @@
 
 A modern, responsive web application for creating and sharing shift work schedules. Built with Angular 19, featuring internationalization support for English and Ukrainian languages.
 
+## Deploy To GitHub Pages
+
+ng deploy --base-href=/shift-mate/
+
 ## 🚀 Features
 
 ### Core Functionality
+
 - **Schedule Creation (FR001)**: Create new shift work schedules with customizable parameters
 - **Calendar View (FR002)**: Interactive calendar displaying work and rest days
 - **Responsive Design (FR003)**: Optimized for mobile, tablet, and desktop devices
 
 ### Key Capabilities
+
 - ✅ **URL-based Schedule Sharing**: Generate shareable links for schedules
 - ✅ **No Database Required**: All calculations done client-side
 - ✅ **Internationalization**: English (default) and Ukrainian language support
@@ -48,6 +54,7 @@ src/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm (v9 or higher)
 - Angular CLI (v19 or higher)
@@ -55,17 +62,20 @@ src/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd shift-mate
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    ng serve
    ```
@@ -110,15 +120,16 @@ ng build --configuration production --localize
 
 Schedules are encoded in the URL using these parameters:
 
-| Parameter | Description | Example |
-|-----------|-------------|---------|
-| `start` | Start date (YYYY-MM-DD) | `2025-08-11` |
-| `work` | Number of working days | `2` |
-| `rest` | Number of rest days | `2` |
-| `time` | Shift times (HH:MM-HH:MM) | `08:00-16:00` |
-| `name` | Schedule name | `My%20Schedule` |
+| Parameter | Description               | Example         |
+| --------- | ------------------------- | --------------- |
+| `start`   | Start date (YYYY-MM-DD)   | `2025-08-11`    |
+| `work`    | Number of working days    | `2`             |
+| `rest`    | Number of rest days       | `2`             |
+| `time`    | Shift times (HH:MM-HH:MM) | `08:00-16:00`   |
+| `name`    | Schedule name             | `My%20Schedule` |
 
 **Example URL:**
+
 ```
 http://localhost:4200/schedule?start=2025-08-11&work=2&rest=2&time=08:00-16:00&name=Day%20Shift
 ```
@@ -146,6 +157,7 @@ The application is fully responsive with breakpoints:
 - **Desktop**: > 1024px
 
 Key responsive features:
+
 - Flexible grid layouts
 - Touch-friendly buttons
 - Readable typography at all sizes
@@ -183,24 +195,28 @@ ng lint
 ## 🏗 Architecture
 
 ### Design Patterns
+
 - **Standalone Components**: No NgModules required
 - **Reactive Programming**: Angular Signals for state management
 - **Service Layer**: Business logic separated from components
 - **URL-based State**: No backend persistence needed
 
 ### Key Services
+
 - **ScheduleService**: Core business logic for schedule calculations
 - **Router**: Navigation and URL parameter handling
 
 ## 🔧 Configuration
 
 ### Angular Configuration
+
 - Standalone application architecture
 - i18n enabled with polyfills
 - SCSS support
 - Development server HMR enabled
 
 ### Browser Support
+
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
@@ -208,10 +224,10 @@ ng lint
 
 ## 📝 Requirements Compliance
 
-| Requirement | Status | Implementation |
-|-------------|---------|----------------|
+| Requirement              | Status      | Implementation                                |
+| ------------------------ | ----------- | --------------------------------------------- |
 | FR001: Schedule Creation | ✅ Complete | `ScheduleSetupComponent` with form validation |
-| FR002: Calendar View | ✅ Complete | `ScheduleViewComponent` with monthly calendar |
+| FR002: Calendar View     | ✅ Complete | `ScheduleViewComponent` with monthly calendar |
 | FR003: Responsive Design | ✅ Complete | CSS Grid + Flexbox with mobile-first approach |
 
 ## 🤝 Contributing
