@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="setup.title" datatype="html">
+        <source> Create Shift Schedule </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.description" datatype="html">
+        <source> Set up your work schedule and get a shareable link </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.name.label" datatype="html">
+        <source> Schedule Name (Optional) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.name.placeholder" datatype="html">
+        <source>My Work Schedule</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.startDate.label" datatype="html">
+        <source> Start Date </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.startDate.error" datatype="html">
+        <source> Start date is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.workDays.label" datatype="html">
+        <source> Working Days </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.workDays.error" datatype="html">
+        <source> Number of working days must be between 1 and 365 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.restDays.label" datatype="html">
+        <source> Rest Days </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.restDays.error" datatype="html">
+        <source> Number of rest days must be between 1 and 365 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">130,131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.create.button" datatype="html">
+        <source> Create Schedule </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">142,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.success.title" datatype="html">
+        <source> Schedule Created Successfully! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">153,154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.success.url.label" datatype="html">
+        <source> Schedule URL: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">161,162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.success.copy.button" datatype="html">
+        <source> Copy </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">176,177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.success.view.button" datatype="html">
+        <source> View Schedule </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">187,188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setup.success.new.button" datatype="html">
+        <source> Create New </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context>
+          <context context-type="linenumber">195,196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.error.title" datatype="html">
+        <source> Invalid Schedule Parameters </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.error.description" datatype="html">
+        <source> The schedule parameters in the URL are invalid or missing. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.error.button" datatype="html">
+        <source> Create New Schedule </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.previous.month" datatype="html">
+        <source>Previous month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">73,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.next.month" datatype="html">
+        <source>Next month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.legend.working" datatype="html">
+        <source>Working Day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">148,150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.legend.off" datatype="html">
+        <source>Day Off</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">154,156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.actions.new" datatype="html">
+        <source> Create New Schedule </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">168,170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.actions.share" datatype="html">
+        <source> Share Schedule </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">175,177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.mon" datatype="html">
+        <source>Mon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.tue" datatype="html">
+        <source>Tue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.wed" datatype="html">
+        <source>Wed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.thu" datatype="html">
+        <source>Thu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.fri" datatype="html">
+        <source>Fri</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.sat" datatype="html">
+        <source>Sat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.days.sun" datatype="html">
+        <source>Sun</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendar.alert.scheduleCopied" datatype="html">
+        <source>Schedule URL copied to clipboard!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

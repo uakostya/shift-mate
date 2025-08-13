@@ -2,10 +2,6 @@
 
 A modern, responsive web application for creating and sharing shift work schedules. Built with Angular 19, featuring internationalization support for English and Ukrainian languages.
 
-## Deploy To GitHub Pages
-
-ng deploy --base-href=/shift-mate/
-
 ## 🚀 Features
 
 ### Core Functionality

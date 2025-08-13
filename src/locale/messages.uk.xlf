@@ -1,134 +1,161 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" target-language="uk" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="setup.title" datatype="html">
-        <source>Create Shift Schedule</source>
+        <source> Create Shift Schedule </source>
         <target>Створити Графік Змін</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">21</context></context-group></trans-unit>
       <trans-unit id="setup.description" datatype="html">
-        <source>Set up your work schedule and get a shareable link</source>
+        <source> Set up your work schedule and get a shareable link </source>
         <target>Налаштуйте свій робочий графік та отримайте посилання для обміну</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">24</context></context-group></trans-unit>
       <trans-unit id="setup.name.label" datatype="html">
-        <source>Schedule Name (Optional)</source>
+        <source> Schedule Name (Optional) </source>
         <target>Назва Графіку (Опціонально)</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">38</context></context-group></trans-unit>
       <trans-unit id="setup.name.placeholder" datatype="html">
         <source>My Work Schedule</source>
         <target>Мій Робочий Графік</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">46</context></context-group></trans-unit>
       <trans-unit id="setup.startDate.label" datatype="html">
-        <source>Start Date</source>
+        <source> Start Date </source>
         <target>Дата Початку</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">57</context></context-group></trans-unit>
       <trans-unit id="setup.startDate.error" datatype="html">
-        <source>Start date is required</source>
+        <source> Start date is required </source>
         <target>Дата початку обов'язкова</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">72</context></context-group></trans-unit>
       <trans-unit id="setup.workDays.label" datatype="html">
-        <source>Working Days</source>
+        <source> Working Days </source>
         <target>Робочі Дні</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">84</context></context-group></trans-unit>
       <trans-unit id="setup.workDays.error" datatype="html">
-        <source>Number of working days must be between 1 and 365</source>
+        <source> Number of working days must be between 1 and 365 </source>
         <target>Кількість робочих днів має бути від 1 до 365</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">101</context></context-group></trans-unit>
       <trans-unit id="setup.restDays.label" datatype="html">
-        <source>Rest Days</source>
+        <source> Rest Days </source>
         <target>Дні Відпочинку</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">113</context></context-group></trans-unit>
       <trans-unit id="setup.restDays.error" datatype="html">
-        <source>Number of rest days must be between 1 and 365</source>
+        <source> Number of rest days must be between 1 and 365 </source>
         <target>Кількість днів відпочинку має бути від 1 до 365</target>
-      </trans-unit>
-      <trans-unit id="setup.startTime.label" datatype="html">
-        <source>Start Time (Optional)</source>
-        <target>Час Початку (Опціонально)</target>
-      </trans-unit>
-      <trans-unit id="setup.endTime.label" datatype="html">
-        <source>End Time (Optional)</source>
-        <target>Час Закінчення (Опціонально)</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">130</context></context-group></trans-unit>
+      
+      
       <trans-unit id="setup.create.button" datatype="html">
-        <source>Create Schedule</source>
+        <source> Create Schedule </source>
         <target>Створити Графік</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">142</context></context-group></trans-unit>
       <trans-unit id="setup.success.title" datatype="html">
-        <source>Schedule Created Successfully!</source>
+        <source> Schedule Created Successfully! </source>
         <target>Графік Успішно Створено!</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">153</context></context-group></trans-unit>
       <trans-unit id="setup.success.url.label" datatype="html">
-        <source>Schedule URL:</source>
+        <source> Schedule URL: </source>
         <target>Посилання на Графік:</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">161</context></context-group></trans-unit>
       <trans-unit id="setup.success.copy.button" datatype="html">
-        <source>Copy</source>
+        <source> Copy </source>
         <target>Копіювати</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">176</context></context-group></trans-unit>
       <trans-unit id="setup.success.view.button" datatype="html">
-        <source>View Schedule</source>
+        <source> View Schedule </source>
         <target>Переглянути Графік</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">187</context></context-group></trans-unit>
       <trans-unit id="setup.success.new.button" datatype="html">
-        <source>Create New</source>
+        <source> Create New </source>
         <target>Створити Новий</target>
-      </trans-unit>
-      <trans-unit id="calendar.title" datatype="html">
-        <source>Shift Schedule Calendar</source>
-        <target>Календар Графіку Змін</target>
-      </trans-unit>
-      <trans-unit id="calendar.pattern" datatype="html">
-        <source>Pattern:</source>
-        <target>Шаблон:</target>
-      </trans-unit>
-      <trans-unit id="calendar.work" datatype="html">
-        <source>work</source>
-        <target>робота</target>
-      </trans-unit>
-      <trans-unit id="calendar.rest" datatype="html">
-        <source>rest</source>
-        <target>відпочинок</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-setup.component.ts</context><context context-type="linenumber">195</context></context-group></trans-unit>
+      
+      
+      
+      
       <trans-unit id="calendar.error.title" datatype="html">
-        <source>Invalid Schedule Parameters</source>
+        <source> Invalid Schedule Parameters </source>
         <target>Неправильні Параметри Графіку</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">52</context></context-group></trans-unit>
       <trans-unit id="calendar.error.description" datatype="html">
-        <source>The schedule parameters in the URL are invalid or missing.</source>
+        <source> The schedule parameters in the URL are invalid or missing. </source>
         <target>Параметри графіку в URL неправильні або відсутні.</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">55</context></context-group></trans-unit>
       <trans-unit id="calendar.error.button" datatype="html">
-        <source>Create New Schedule</source>
+        <source> Create New Schedule </source>
         <target>Створити Новий Графік</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">62</context></context-group></trans-unit>
       <trans-unit id="calendar.previous.month" datatype="html">
         <source>Previous month</source>
         <target>Попередній місяць</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">73</context></context-group></trans-unit>
       <trans-unit id="calendar.next.month" datatype="html">
         <source>Next month</source>
         <target>Наступний місяць</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">98</context></context-group></trans-unit>
       <trans-unit id="calendar.legend.working" datatype="html">
         <source>Working Day</source>
         <target>Робочий День</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">148</context></context-group></trans-unit>
       <trans-unit id="calendar.legend.off" datatype="html">
         <source>Day Off</source>
         <target>Вихідний</target>
-      </trans-unit>
-      <trans-unit id="calendar.legend.today" datatype="html">
-        <source>Today</source>
-        <target>Сьогодні</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">154</context></context-group></trans-unit>
+      
       <trans-unit id="calendar.actions.new" datatype="html">
-        <source>Create New Schedule</source>
+        <source> Create New Schedule </source>
         <target>Створити Новий Графік</target>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">168</context></context-group></trans-unit>
       <trans-unit id="calendar.actions.share" datatype="html">
-        <source>Share Schedule</source>
+        <source> Share Schedule </source>
         <target>Поділитися Графіком</target>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/schedule-view.component.ts</context><context context-type="linenumber">175</context></context-group></trans-unit><trans-unit id="calendar.days.mon" datatype="html">
+        <source>Mon</source><target state="new">Пн</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.days.tue" datatype="html">
+        <source>Tue</source><target state="new">Вт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.days.wed" datatype="html">
+        <source>Wed</source><target state="new">Ср</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.days.thu" datatype="html">
+        <source>Thu</source><target state="new">Чт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.days.fri" datatype="html">
+        <source>Fri</source><target state="new">Пт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.days.sat" datatype="html">
+        <source>Sat</source><target state="new">Сб</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.days.sun" datatype="html">
+        <source>Sun</source><target state="new">Нд</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit><trans-unit id="calendar.alert.scheduleCopied" datatype="html">
+        <source>Schedule URL copied to clipboard!</source><target state="new">Посилання скопійовано в буфер обміну!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/schedule-view.component.ts</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>

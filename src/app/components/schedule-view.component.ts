@@ -88,7 +88,7 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
             </button>
 
             <h3 class="text-xl font-semibold text-gray-900">
-              {{ currentMonth() | date : 'MMMM yyyy' }}
+              {{ currentMonth() | date : 'LLLL yyyy' | titlecase }}
             </h3>
 
             <button
@@ -181,14 +181,22 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
   `,
 })
 export class ScheduleViewComponent implements OnInit {
-  private route = inject(ActivatedRoute);
-  private router = inject(Router);
-  private scheduleService = inject(ScheduleService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
+  private readonly scheduleService = inject(ScheduleService);
 
   schedule = signal<ShiftSchedule | null>(null);
   currentMonth = signal<Date>(new Date());
 
-  dayHeaders = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  dayHeaders = [
+    $localize`:@@calendar.days.mon:Mon`,
+    $localize`:@@calendar.days.tue:Tue`,
+    $localize`:@@calendar.days.wed:Wed`,
+    $localize`:@@calendar.days.thu:Thu`,
+    $localize`:@@calendar.days.fri:Fri`,
+    $localize`:@@calendar.days.sat:Sat`,
+    $localize`:@@calendar.days.sun:Sun`,
+  ];
 
   calendarDays = computed(() => {
     const schedule = this.schedule();
@@ -236,7 +244,6 @@ export class ScheduleViewComponent implements OnInit {
       classes.push('bg-gray-300', 'text-gray-800');
     }
 
-    // Add border for current day instead of background
     if (day.isCurrentDay && day.isCurrentMonth) {
       classes.push('ring-2', 'ring-blue-500', 'ring-offset-1');
     }
@@ -251,8 +258,9 @@ export class ScheduleViewComponent implements OnInit {
   shareSchedule(): void {
     const url = window.location.href;
     navigator.clipboard.writeText(url).then(() => {
-      // Could add a toast notification here
-      alert('Schedule URL copied to clipboard!');
+      alert(
+        $localize`:@@calendar.alert.scheduleCopied:Schedule URL copied to clipboard!`
+      );
     });
   }
 }
