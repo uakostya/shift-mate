@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/shift-mate/",
+    "deploy": "ng deploy",
     "i18n": "ng extract-i18n && npm run xliffmerge",
     "xliffmerge": "xliffmerge --profile xliffmerge.json uk"
   },
