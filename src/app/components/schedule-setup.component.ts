@@ -18,10 +18,10 @@ import { ShiftSchedule } from '../models/schedule.model';
       <div class="max-w-md mx-auto">
         <div class="text-center mb-8">
           <h1 class="text-3xl font-bold text-gray-900" i18n="@@setup.title">
-            Create Shift Schedule
+            Створити Графік Змін
           </h1>
           <p class="mt-2 text-gray-600" i18n="@@setup.description">
-            Set up your work schedule and get a shareable link
+            Налаштуйте свій робочий графік та отримайте посилання для обміну
           </p>
         </div>
 
@@ -35,7 +35,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="block text-sm font-medium text-gray-700"
                   i18n="@@setup.name.label"
                 >
-                  Schedule Name (Optional)
+                  Назва Графіку (Опціонально)
                 </label>
                 <input
                   type="text"
@@ -43,7 +43,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   formControlName="name"
                   class="form-input mt-1"
                   i18n-placeholder="@@setup.name.placeholder"
-                  placeholder="My Work Schedule"
+                  placeholder="Мій Робочий Графік"
                 />
               </div>
 
@@ -54,7 +54,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="block text-sm font-medium text-gray-700"
                   i18n="@@setup.startDate.label"
                 >
-                  Start Date
+                  Дата Початку
                 </label>
                 <input
                   type="date"
@@ -69,7 +69,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="mt-1 text-sm text-red-600"
                   i18n="@@setup.startDate.error"
                 >
-                  Start date is required
+                  Дата початку обов'язкова
                 </p>
                 }
               </div>
@@ -81,7 +81,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="block text-sm font-medium text-gray-700"
                   i18n="@@setup.workDays.label"
                 >
-                  Working Days
+                  Робочі Дні
                 </label>
                 <input
                   type="number"
@@ -98,7 +98,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="mt-1 text-sm text-red-600"
                   i18n="@@setup.workDays.error"
                 >
-                  Number of working days must be between 1 and 365
+                  Кількість робочих днів має бути від 1 до 365
                 </p>
                 }
               </div>
@@ -110,7 +110,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="block text-sm font-medium text-gray-700"
                   i18n="@@setup.restDays.label"
                 >
-                  Rest Days
+                  Дні Відпочинку
                 </label>
                 <input
                   type="number"
@@ -127,7 +127,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="mt-1 text-sm text-red-600"
                   i18n="@@setup.restDays.error"
                 >
-                  Number of rest days must be between 1 and 365
+                  Кількість днів відпочинку має бути від 1 до 365
                 </p>
                 }
               </div>
@@ -139,7 +139,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                 class="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 i18n="@@setup.create.button"
               >
-                Create Schedule
+                Створити Графік
               </button>
             </div>
           </form>
@@ -150,7 +150,7 @@ import { ShiftSchedule } from '../models/schedule.model';
               class="text-sm font-medium text-green-800 mb-2"
               i18n="@@setup.success.title"
             >
-              Schedule Created Successfully!
+              Графік Успішно Створено!
             </h3>
             <div class="space-y-3">
               <div>
@@ -158,7 +158,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="block text-xs font-medium text-green-700 mb-1"
                   i18n="@@setup.success.url.label"
                 >
-                  Schedule URL:
+                  Посилання на Графік:
                 </label>
                 <div class="flex items-center space-x-2">
                   <input
@@ -173,7 +173,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                     class="px-3 py-2 text-xs bg-green-600 text-white rounded hover:bg-green-700"
                     i18n="@@setup.success.copy.button"
                   >
-                    Copy
+                    Копіювати
                   </button>
                 </div>
               </div>
@@ -184,7 +184,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="flex-1 btn-primary text-sm"
                   i18n="@@setup.success.view.button"
                 >
-                  View Schedule
+                  Переглянути Графік
                 </button>
                 <button
                   type="button"
@@ -192,7 +192,7 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="flex-1 btn-secondary text-sm"
                   i18n="@@setup.success.new.button"
                 >
-                  Create New
+                  Створити Новий
                 </button>
               </div>
             </div>

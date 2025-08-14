@@ -14,9 +14,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en",
+        "sourceLocale": "uk",
         "locales": {
-          "uk": "src/locale/messages.uk.xlf"
+          "en": "src/locale/messages.en.xlf"
         }
       },
       "architect": {
@@ -60,8 +60,8 @@
               "extractLicenses": false,
               "sourceMap": true
             },
-            "uk": {
-              "localize": ["uk"]
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -75,8 +75,8 @@
             "development": {
               "buildTarget": "shift-mate:build:development"
             },
-            "uk": {
-              "buildTarget": "shift-mate:build:uk"
+            "en": {
+              "buildTarget": "shift-mate:build:en"
             }
           },
           "defaultConfiguration": "development"

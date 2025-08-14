@@ -49,17 +49,17 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
             class="text-lg font-medium text-gray-900 mb-2"
             i18n="@@calendar.error.title"
           >
-            Invalid Schedule Parameters
+            Неправильні Параметри Графіку
           </h3>
           <p class="text-gray-600 mb-4" i18n="@@calendar.error.description">
-            The schedule parameters in the URL are invalid or missing.
+            Параметри графіку в URL неправильні або відсутні.
           </p>
           <button
             (click)="goToSetup()"
             class="btn-primary"
             i18n="@@calendar.error.button"
           >
-            Create New Schedule
+            Створити Новий Графік
           </button>
         </div>
         } @else {
@@ -70,7 +70,7 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
               (click)="previousMonth()"
               class="p-2 rounded-lg hover:bg-gray-100 transition-colors"
               i18n-aria-label="@@calendar.previous.month"
-              aria-label="Previous month"
+              aria-label="Попередній місяць"
             >
               <svg
                 class="w-5 h-5"
@@ -95,7 +95,7 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
               (click)="nextMonth()"
               class="p-2 rounded-lg hover:bg-gray-100 transition-colors"
               i18n-aria-label="@@calendar.next.month"
-              aria-label="Next month"
+              aria-label="Наступний місяць"
             >
               <svg
                 class="w-5 h-5"
@@ -145,13 +145,13 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
                 <span
                   class="text-sm text-gray-600"
                   i18n="@@calendar.legend.working"
-                  >Working Day</span
+                  >Робочий День</span
                 >
               </div>
               <div class="flex items-center space-x-2">
                 <div class="w-4 h-4 bg-gray-300 border rounded"></div>
                 <span class="text-sm text-gray-600" i18n="@@calendar.legend.off"
-                  >Day Off</span
+                  >Вихідний</span
                 >
               </div>
             </div>
@@ -165,14 +165,14 @@ import { ShiftSchedule, CalendarDay } from '../models/schedule.model';
             class="btn-secondary"
             i18n="@@calendar.actions.new"
           >
-            Create New Schedule
+            Створити Новий Графік
           </button>
           <button
             (click)="shareSchedule()"
             class="btn-primary"
             i18n="@@calendar.actions.share"
           >
-            Share Schedule
+            Поділитися Графіком
           </button>
         </div>
         }
@@ -189,13 +189,13 @@ export class ScheduleViewComponent implements OnInit {
   currentMonth = signal<Date>(new Date());
 
   dayHeaders = [
-    $localize`:@@calendar.days.mon:Mon`,
-    $localize`:@@calendar.days.tue:Tue`,
-    $localize`:@@calendar.days.wed:Wed`,
-    $localize`:@@calendar.days.thu:Thu`,
-    $localize`:@@calendar.days.fri:Fri`,
-    $localize`:@@calendar.days.sat:Sat`,
-    $localize`:@@calendar.days.sun:Sun`,
+    $localize`:@@calendar.days.mon:Пн`,
+    $localize`:@@calendar.days.tue:Вт`,
+    $localize`:@@calendar.days.wed:Ср`,
+    $localize`:@@calendar.days.thu:Чт`,
+    $localize`:@@calendar.days.fri:Пт`,
+    $localize`:@@calendar.days.sat:Сб`,
+    $localize`:@@calendar.days.sun:Нд`,
   ];
 
   calendarDays = computed(() => {
@@ -259,7 +259,7 @@ export class ScheduleViewComponent implements OnInit {
     const url = window.location.href;
     navigator.clipboard.writeText(url).then(() => {
       alert(
-        $localize`:@@calendar.alert.scheduleCopied:Schedule URL copied to clipboard!`
+        $localize`:@@calendar.alert.scheduleCopied:Посилання скопійовано в буфер обміну!`
       );
     });
   }

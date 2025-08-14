@@ -9,7 +9,7 @@
     "test": "ng test",
     "deploy": "ng deploy",
     "i18n": "ng extract-i18n && npm run xliffmerge",
-    "xliffmerge": "xliffmerge --profile xliffmerge.json uk"
+    "xliffmerge": "xliffmerge --profile xliffmerge.json en"
   },
   "private": true,
   "dependencies": {
