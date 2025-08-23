@@ -85,10 +85,10 @@ src/
 ### Building for Production
 
 ```bash
-# Build for English (default)
+# Build for Ukraninan (default)
 ng build
 
-# Build for Ukrainian
+# Build for English
 ng build --configuration production --localize
 ```
 
