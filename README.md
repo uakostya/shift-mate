@@ -18,7 +18,7 @@ https://uakostya.github.io/shift-mate/
 
 - ✅ **URL-based Schedule Sharing**: Generate shareable links for schedules
 - ✅ **No Database Required**: All calculations done client-side
-- ✅ **Internationalization**: English (default) and Ukrainian language support
+- ✅ **Internationalization**: English and Ukrainian (default) language support
 - ✅ **Modern UI**: Clean, accessible design with visual day indicators
 - ✅ **Mobile Responsive**: Works seamlessly across all device sizes
 
@@ -47,7 +47,6 @@ src/
 │   └── app.routes.ts                      # Routing configuration
 ├── locale/
 │   ├── messages.en.xlf                    # English translations
-│   └── messages.uk.xlf                    # Ukrainian translations
 └── styles.scss                           # Global styles
 ```
 
@@ -112,34 +111,33 @@ ng build --configuration production --localize
 1. **Access via URL**: Open a shared schedule URL
 2. **Navigate Calendar**: Use arrow buttons to browse months
 3. **Interpret Colors**:
-   - 🟢 Green: Working days
-   - 🔴 Red: Rest days
-   - 🔵 Blue: Current day
+   - 🔴 Red: Working days
+   - 🟢 Green: Rest days
+   - 🔵 Blue border: Current day
 
 ## 🌐 URL Parameters
 
 Schedules are encoded in the URL using these parameters:
 
-| Parameter | Description               | Example         |
-| --------- | ------------------------- | --------------- |
-| `start`   | Start date (YYYY-MM-DD)   | `2025-08-11`    |
-| `work`    | Number of working days    | `2`             |
-| `rest`    | Number of rest days       | `2`             |
-| `time`    | Shift times (HH:MM-HH:MM) | `08:00-16:00`   |
-| `name`    | Schedule name             | `My%20Schedule` |
+| Parameter | Description             | Example         |
+| --------- | ----------------------- | --------------- |
+| `start`   | Start date (YYYY-MM-DD) | `2025-08-11`    |
+| `work`    | Number of working days  | `2`             |
+| `rest`    | Number of rest days     | `2`             |
+| `name`    | Schedule name           | `My%20Schedule` |
 
 **Example URL:**
 
 ```
-http://localhost:4200/schedule?start=2025-08-11&work=2&rest=2&time=08:00-16:00&name=Day%20Shift
+http://localhost:4200/schedule?start=2025-08-11&work=2&rest=2&name=Day%20Shift
 ```
 
 ## 🌍 Internationalization
 
 The application supports two languages:
 
-- **English** (default): `en`
-- **Ukrainian**: `uk`
+- **Ukrainian** (default): `uk`
+- **English**: `en`
 
 ### Adding New Languages
 
