@@ -2,6 +2,10 @@
 
 A modern, responsive web application for creating and sharing shift work schedules. Built with Angular 19, featuring internationalization support for English and Ukrainian languages.
 
+## 🎬 Demo
+
+https://uakostya.github.io/shift-mate/
+
 ## 🚀 Features
 
 ### Core Functionality
