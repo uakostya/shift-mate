@@ -65,25 +65,20 @@ export class ScheduleService {
 
   calculateCalendarMonth(
     schedule: ShiftSchedule,
-    targetMonth: Date
+    targetMonth: Date,
   ): CalendarDay[] {
     const year = targetMonth.getFullYear();
     const month = targetMonth.getMonth();
 
-    // Get first day of month and how many days in month
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
     const daysInMonth = lastDay.getDate();
 
-    // Get first day of week (0 = Sunday, 1 = Monday, etc.)
-    // Convert to Monday-based week (0 = Monday, 6 = Sunday)
     const firstDayOfWeek = (firstDay.getDay() + 6) % 7;
 
-    // Get days from previous month to fill the calendar
     const prevMonth = new Date(year, month - 1, 0);
     const daysFromPrevMonth = firstDayOfWeek;
 
-    // Get days from next month to fill the calendar
     const totalCells = 42; // 6 weeks × 7 days
     const daysFromNextMonth = totalCells - daysInMonth - daysFromPrevMonth;
 
@@ -91,7 +86,6 @@ export class ScheduleService {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    // Add days from previous month
     for (let i = daysFromPrevMonth - 1; i >= 0; i--) {
       const date = new Date(year, month - 1, prevMonth.getDate() - i);
       calendar.push({
@@ -102,7 +96,6 @@ export class ScheduleService {
       });
     }
 
-    // Add days from current month
     for (let day = 1; day <= daysInMonth; day++) {
       const date = new Date(year, month, day);
       calendar.push({
@@ -113,7 +106,6 @@ export class ScheduleService {
       });
     }
 
-    // Add days from next month
     for (let day = 1; day <= daysFromNextMonth; day++) {
       const date = new Date(year, month + 1, day);
       calendar.push({
@@ -145,7 +137,7 @@ export class ScheduleService {
     target.setHours(0, 0, 0, 0);
 
     return Math.floor(
-      (target.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+      (target.getTime() - start.getTime()) / (1000 * 60 * 60 * 24),
     );
   }
 

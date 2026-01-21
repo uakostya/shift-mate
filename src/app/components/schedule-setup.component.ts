@@ -28,7 +28,6 @@ import { ShiftSchedule } from '../models/schedule.model';
         <div class="card">
           <form [formGroup]="scheduleForm" (ngSubmit)="onSubmit()">
             <div class="space-y-6">
-              <!-- Schedule Name -->
               <div>
                 <label
                   for="name"
@@ -47,7 +46,6 @@ import { ShiftSchedule } from '../models/schedule.model';
                 />
               </div>
 
-              <!-- Start Date -->
               <div>
                 <label
                   for="startDate"
@@ -63,18 +61,19 @@ import { ShiftSchedule } from '../models/schedule.model';
                   class="form-input mt-1"
                   required
                 />
-                @if (scheduleForm.get('startDate')?.invalid &&
-                scheduleForm.get('startDate')?.touched) {
-                <p
-                  class="mt-1 text-sm text-red-600"
-                  i18n="@@setup.startDate.error"
-                >
-                  Дата початку обов'язкова
-                </p>
+                @if (
+                  scheduleForm.get('startDate')?.invalid &&
+                  scheduleForm.get('startDate')?.touched
+                ) {
+                  <p
+                    class="mt-1 text-sm text-red-600"
+                    i18n="@@setup.startDate.error"
+                  >
+                    Дата початку обов'язкова
+                  </p>
                 }
               </div>
 
-              <!-- Work Days -->
               <div>
                 <label
                   for="workDays"
@@ -92,18 +91,19 @@ import { ShiftSchedule } from '../models/schedule.model';
                   max="365"
                   required
                 />
-                @if (scheduleForm.get('workDays')?.invalid &&
-                scheduleForm.get('workDays')?.touched) {
-                <p
-                  class="mt-1 text-sm text-red-600"
-                  i18n="@@setup.workDays.error"
-                >
-                  Кількість робочих днів має бути від 1 до 365
-                </p>
+                @if (
+                  scheduleForm.get('workDays')?.invalid &&
+                  scheduleForm.get('workDays')?.touched
+                ) {
+                  <p
+                    class="mt-1 text-sm text-red-600"
+                    i18n="@@setup.workDays.error"
+                  >
+                    Кількість робочих днів має бути від 1 до 365
+                  </p>
                 }
               </div>
 
-              <!-- Rest Days -->
               <div>
                 <label
                   for="restDays"
@@ -121,14 +121,16 @@ import { ShiftSchedule } from '../models/schedule.model';
                   max="365"
                   required
                 />
-                @if (scheduleForm.get('restDays')?.invalid &&
-                scheduleForm.get('restDays')?.touched) {
-                <p
-                  class="mt-1 text-sm text-red-600"
-                  i18n="@@setup.restDays.error"
-                >
-                  Кількість днів відпочинку має бути від 1 до 365
-                </p>
+                @if (
+                  scheduleForm.get('restDays')?.invalid &&
+                  scheduleForm.get('restDays')?.touched
+                ) {
+                  <p
+                    class="mt-1 text-sm text-red-600"
+                    i18n="@@setup.restDays.error"
+                  >
+                    Кількість днів відпочинку має бути від 1 до 365
+                  </p>
                 }
               </div>
 
@@ -145,58 +147,60 @@ import { ShiftSchedule } from '../models/schedule.model';
           </form>
 
           @if (generatedUrl()) {
-          <div class="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-            <h3
-              class="text-sm font-medium text-green-800 mb-2"
-              i18n="@@setup.success.title"
+            <div
+              class="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg"
             >
-              Графік Успішно Створено!
-            </h3>
-            <div class="space-y-3">
-              <div>
-                <label
-                  class="block text-xs font-medium text-green-700 mb-1"
-                  i18n="@@setup.success.url.label"
-                >
-                  Посилання на Графік:
-                </label>
-                <div class="flex items-center space-x-2">
-                  <input
-                    type="text"
-                    [value]="generatedUrl()"
-                    readonly
-                    class="flex-1 text-xs p-2 border border-green-300 rounded bg-white"
-                  />
+              <h3
+                class="text-sm font-medium text-green-800 mb-2"
+                i18n="@@setup.success.title"
+              >
+                Графік Успішно Створено!
+              </h3>
+              <div class="space-y-3">
+                <div>
+                  <label
+                    class="block text-xs font-medium text-green-700 mb-1"
+                    i18n="@@setup.success.url.label"
+                  >
+                    Посилання на Графік:
+                  </label>
+                  <div class="flex items-center space-x-2">
+                    <input
+                      type="text"
+                      [value]="generatedUrl()"
+                      readonly
+                      class="flex-1 text-xs p-2 border border-green-300 rounded bg-white"
+                    />
+                    <button
+                      type="button"
+                      (click)="copyUrl()"
+                      class="px-3 py-2 text-xs bg-green-600 text-white rounded hover:bg-green-700"
+                      i18n="@@setup.success.copy.button"
+                    >
+                      Копіювати
+                    </button>
+                  </div>
+                </div>
+                <div class="flex space-x-2">
                   <button
                     type="button"
-                    (click)="copyUrl()"
-                    class="px-3 py-2 text-xs bg-green-600 text-white rounded hover:bg-green-700"
-                    i18n="@@setup.success.copy.button"
+                    (click)="viewSchedule()"
+                    class="flex-1 btn-primary text-sm"
+                    i18n="@@setup.success.view.button"
                   >
-                    Копіювати
+                    Переглянути Графік
+                  </button>
+                  <button
+                    type="button"
+                    (click)="createNew()"
+                    class="flex-1 btn-secondary text-sm"
+                    i18n="@@setup.success.new.button"
+                  >
+                    Створити Новий
                   </button>
                 </div>
               </div>
-              <div class="flex space-x-2">
-                <button
-                  type="button"
-                  (click)="viewSchedule()"
-                  class="flex-1 btn-primary text-sm"
-                  i18n="@@setup.success.view.button"
-                >
-                  Переглянути Графік
-                </button>
-                <button
-                  type="button"
-                  (click)="createNew()"
-                  class="flex-1 btn-secondary text-sm"
-                  i18n="@@setup.success.new.button"
-                >
-                  Створити Новий
-                </button>
-              </div>
             </div>
-          </div>
           }
         </div>
       </div>
