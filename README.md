@@ -5,3 +5,9 @@ A modern, responsive web application for creating and sharing shift work schedul
 ## 🎬 Demo
 
 https://uakostya.github.io/shift-mate/
+
+## Deployment
+
+```bash
+npm run deploy
+```
