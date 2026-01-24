@@ -1,0 +1,60 @@
+{
+  "configVersion": 1,
+  "timestamp": 1769256729858,
+  "index": "/shift-mate/index.csr.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/shift-mate/favicon.ico",
+        "/shift-mate/index.html",
+        "/shift-mate/main-BQSO4XC7.js",
+        "/shift-mate/polyfills-YWVR6DIV.js",
+        "/shift-mate/styles-SN7XKCEE.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/shift-mate/favicon.ico": "404f591ad68c21f1576b13c8a121d48c999ca4dc",
+    "/shift-mate/index.html": "9aa07ce4250bf84114795f37f71ba613e5d25424",
+    "/shift-mate/main-BQSO4XC7.js": "782ad517ab69fd32c6b2f86f8842c3301ebc4084",
+    "/shift-mate/polyfills-YWVR6DIV.js": "f48bb08633ed98b335439c4700483c91c9cfcd07",
+    "/shift-mate/styles-SN7XKCEE.css": "55534f18145f8ec4265af756dbd648a77a828c01"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
