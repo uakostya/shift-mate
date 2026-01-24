@@ -9,8 +9,7 @@
     "test": "ng test",
     "deploy": "ng deploy",
     "i18n": "ng extract-i18n && npm run xliffmerge",
-    "xliffmerge": "xliffmerge --profile xliffmerge.json en",
-    "serve:ssr:shift-mate": "node dist/shift-mate/server/server.mjs"
+    "xliffmerge": "xliffmerge --profile xliffmerge.json en"
   },
   "private": true,
   "dependencies": {
@@ -21,12 +20,9 @@
     "@angular/localize": "^21.1.0",
     "@angular/platform-browser": "^21.1.0",
     "@angular/platform-browser-dynamic": "^21.1.0",
-    "@angular/platform-server": "^21.1.0",
     "@angular/router": "^21.1.0",
     "@angular/service-worker": "^21.1.0",
-    "@angular/ssr": "^21.1.0",
     "autoprefixer": "^10.4.21",
-    "express": "^5.1.0",
     "ngx-i18nsupport": "^0.17.1",
     "postcss": "^8.5.6",
     "rxjs": "~7.8.0",
